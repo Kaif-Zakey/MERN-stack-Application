@@ -39,8 +39,8 @@ project-root/
 │   ├── models/              # Mongoose models
 │   ├── routes/              # API routes
 │   ├── db/                  # Database configuration
-│   ├── .env                 # Environment variables
-│   └── server.ts            # Express server setup
+│   |─ .env                 # Environment variables
+│          
 ├── frontend/
 │   ├── src/
 │   │   ├── assets/          # Static assets
@@ -67,7 +67,7 @@ project-root/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Kaif-Zakey/MERN-stack-Application.git>
    cd project-name
    ```
 
@@ -100,13 +100,13 @@ project-root/
    
    Backend (runs on port 3000):
    ```bash
-   cd backend
+   cd node-server
    npm run dev
    ```
    
    Frontend (runs on port 5173):
    ```bash
-   cd frontend
+   cd mini-pos-redux
    npm run dev
    ```
 
@@ -127,17 +127,16 @@ project-root/
 ### Authentication Endpoints
 
 ```
-POST /api/auth/register    # User registration
-POST /api/auth/login       # User login
-POST /api/auth/refresh     # Refresh access token
-POST /api/auth/logout      # User logout
+POST /api/auth/signup            # User registration
+POST /api/auth/login             # User login
+POST /api/auth/refresh-token     # Refresh access token
+POST /api/auth/logout            # User logout
 ```
 
 ### Protected Routes
 
 ```
-GET /api/user/profile      # Get user profile
-PUT /api/user/profile      # Update user profile
+GET /api/auth/users      # Get user profile
 ```
 
 ## 🔒 Authentication Flow
@@ -209,8 +208,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-If you have any questions or need help, please open an issue on GitHub or contact [your-email@example.com].
+If you have any questions or need help, please open an issue on GitHub or contact [kaifzakey22@example.com].
 
 ---
 
-**Happy Coding!** 🎉
+**Vibe Code!** 🎉
